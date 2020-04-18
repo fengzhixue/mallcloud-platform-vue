@@ -1,7 +1,7 @@
 import request from '@/utils/request'
 export function fetchList(params) {
   return request({
-    url:'/api-marking/marking/SmsHomeRecommendSubject/list',
+    url:'/api-cms/marking/SmsHomeRecommendSubject/list',
     method:'get',
     params:params
   })
@@ -9,7 +9,7 @@ export function fetchList(params) {
 
 export function updateRecommendStatus(data) {
   return request({
-    url:'/api-marking/marking/SmsHomeRecommendSubject/update/recommendStatus',
+    url:'/api-cms/marking/SmsHomeRecommendSubject/update/recommendStatus',
     method:'post',
     data:data
   })
@@ -17,7 +17,7 @@ export function updateRecommendStatus(data) {
 
 export function deleteHomeSubject(data) {
   return request({
-    url:'/api-marking/marking/SmsHomeRecommendSubject/delete',
+    url:'/api-cms/marking/SmsHomeRecommendSubject/delete',
     method:'post',
     data:data
   })
@@ -25,7 +25,7 @@ export function deleteHomeSubject(data) {
 
 export function createHomeSubject(data) {
   return request({
-    url:'/api-marking/marking/SmsHomeRecommendSubject/create',
+    url:'/api-cms/marking/SmsHomeRecommendSubject/create',
     method:'post',
     data:data
   })
@@ -33,7 +33,7 @@ export function createHomeSubject(data) {
 
 export function updateHomeSubjectSort(params) {
   return request({
-    url:'/api-marking/marking/SmsHomeRecommendSubject/update/sort/'+params.id,
+    url:'/api-cms/marking/SmsHomeRecommendSubject/update/sort/'+params.id,
     method:'post',
     params:params
   })

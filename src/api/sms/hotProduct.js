@@ -1,7 +1,7 @@
 import request from '@/utils/request'
 export function fetchList(params) {
   return request({
-    url:'/api-marking/marking/SmsHomeRecommendProduct/list',
+    url:'/api-goods/marking/SmsHomeRecommendProduct/list',
     method:'get',
     params:params
   })
@@ -9,7 +9,7 @@ export function fetchList(params) {
 
 export function updateRecommendStatus(data) {
   return request({
-    url:'/api-marking/marking/SmsHomeRecommendProduct/update/recommendStatus',
+    url:'/api-goods/marking/SmsHomeRecommendProduct/update/recommendStatus',
     method:'post',
     data:data
   })
@@ -17,7 +17,7 @@ export function updateRecommendStatus(data) {
 
 export function deleteHotProduct(data) {
   return request({
-    url:'/api-marking/marking/SmsHomeRecommendProduct/delete',
+    url:'/api-goods/marking/SmsHomeRecommendProduct/delete',
     method:'post',
     data:data
   })
@@ -25,7 +25,7 @@ export function deleteHotProduct(data) {
 
 export function createHotProduct(data) {
   return request({
-    url:'/api-marking/marking/SmsHomeRecommendProduct/create',
+    url:'/api-goods/marking/SmsHomeRecommendProduct/create',
     method:'post',
     data:data
   })
@@ -33,7 +33,7 @@ export function createHotProduct(data) {
 
 export function updateHotProductSort(params) {
   return request({
-    url:'/api-marking/marking/SmsHomeRecommendProduct/update/sort/'+params.id,
+    url:'/api-goods/marking/SmsHomeRecommendProduct/update/sort/'+params.id,
     method:'post',
     params:params
   })
