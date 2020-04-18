@@ -1,7 +1,7 @@
 import request from '@/utils/request'
 export function fetchList(params) {
   return request({
-    url:'/gen/list',
+    url:'/api-generator/generator/list',
     method:'get',
     params:params
   })
@@ -9,21 +9,21 @@ export function fetchList(params) {
 
 export function codeGens(tableName) {
   return request({
-    url:'/gen/code/'+tableName,
+    url:'/api-generator/generator/code/'+tableName,
     method:'get',
   })
 }
 
 export function createGen(data) {
   return request({
-    url:'/gen/create',
+    url:'/api-generator/generator/create',
     method:'post',
     data:data
   })
 }
 export function updateShowStatus(data) {
   return request({
-    url:'/gen/update/showStatus',
+    url:'/api-generator/generator/update/showStatus',
     method:'post',
     data:data
   })
@@ -31,7 +31,7 @@ export function updateShowStatus(data) {
 
 export function updateFactoryStatus(data) {
   return request({
-    url:'/gen/update/factoryStatus',
+    url:'/api-generator/generator/update/factoryStatus',
     method:'post',
     data:data
   })
@@ -39,14 +39,14 @@ export function updateFactoryStatus(data) {
 
 export function deleteGen(id) {
   return request({
-    url:'/gen/delete/'+id,
+    url:'/api-generator/generator/delete/'+id,
     method:'get',
   })
 }
 
 export function getGen(id) {
   return request({
-    url:'/gen/'+id,
+    url:'/api-generator/generator/'+id,
     method:'get',
   })
 }
