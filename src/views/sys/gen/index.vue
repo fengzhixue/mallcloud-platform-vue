@@ -163,7 +163,7 @@
         fetchList(this.listQuery).then(response => {
         console.log(response.data)
           this.listLoading = false;
-          this.list = response.data.records;
+          this.list = response.data;
           this.total = response.count;
           this.totalPage = response.data.pages;
           this.pageSize = response.data.size;
